@@ -11,7 +11,6 @@ import Entertaiment from './ui/Entertaiment'
 import Health from './ui/Health'
 import Science from './ui/Science'
 import Sports from './ui/Sports'
-import Technology from './ui/Technology'
 
 import WebBerita from './component/WebBerita';
 
@@ -32,7 +31,6 @@ function MatertialTopTab(){
         <Tab.Screen name="Health" component={Health} />
         <Tab.Screen name="Science" component={Science} />
         <Tab.Screen name="Sports" component={Sports} />
-        <Tab.Screen name="Technology" component={Technology} />
     </Tab.Navigator>
   );
 }
@@ -47,7 +45,7 @@ export default function App(){
           options={{ 
             title:'',
             headerStyle:{ backgroundColor: '#3F51B6', },
-            headerTitle: props => <CustomHeader {...props} />
+            headerTitle: props => <CustomHeader {...props} />,
           }}
         />
         <Stack.Screen 
